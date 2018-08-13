@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Viewer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+        body {
+            background: #000000
+        }
+
+        #viewer {
+            position: relative;
+            width: 1024px;
+            height: 1280px;
+        }
+
+        #players, #grenades, #shots, #bomb, #background {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 1024px;
+            height: 1024px;
+        }
+
+        #list {
+            position: absolute;
+            top: 1024px;
+            left: 0px;
+            width: 1024px;
+            height: 256px;
+        }
+    </style>
+</head>
+<body>
+    <div id="viewer">
+        <canvas id="background"></canvas>
+        <canvas id="bomb"></canvas>
+        <canvas id="grenades"></canvas>
+        <canvas id="shots"></canvas>
+        <canvas id="players"></canvas>
+        <canvas id="list"></canvas>
+    </div>
+    <script src="js/viewer.js"></script>
+</body>
+</html>
